@@ -4,7 +4,7 @@ This repository contains my own implementation of a Convolutional Neural Network
 
 ### Highlights
 - **Optimized Computations:** Used dot products where applicable to enhance computational speed.
-- **Tested with LeNet-5:** Successfully implemented the LeNet-5 architecture to validate the framework. Minor adjustments may be required to implement other CNN architectures.
+- **Tested with LeNet-5:** Successfully implemented the LeNet-5 architecture to validate the framework. Tested on MNIST dataset with preprocessing (96.5% Accuracy). Minor adjustments may be required to implement other CNN architectures.
 
 ### Download
 [Link to download the trained test model](To add)
