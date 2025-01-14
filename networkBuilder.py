@@ -98,15 +98,15 @@ class NetworkBuilder:
         accuracy = success / set_size
         return accuracy
 
-    def save_model(self, filepath):
+    def save(self, filepath):
         with open(filepath, 'wb') as f:
             pickle.dump(self.model, f)
 
-    def load_model(self, filepath):
+    def load(self, filepath):
           with open(filepath, 'rb') as f:
-            return pickle.load(f)
+            self.model = pickle.load(f)
 
-    def print_model(self):
+    def print(self):
         table = []
         total_param = 0
         for i, layer in enumerate(self.model):

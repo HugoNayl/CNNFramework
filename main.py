@@ -40,7 +40,6 @@ layers = [
         ]
 
 model = NetworkBuilder(layers)
-
 pipe = Pipeline('dataset', 'train-images.idx3-ubyte', 'train-labels.idx1-ubyte', 't10k-images.idx3-ubyte', 't10k-labels.idx1-ubyte')
 train_im = pipe.images_train
 train_lab = pipe.labels_train
@@ -49,13 +48,13 @@ test_lab = pipe.labels_test
 
 acc_init = model.test(test_im, test_lab)
 
+#Use model.load('test.pkl') to use model I trained
 model.fit(train_im, train_lab, 0.001, 'cross_entropy_loss', 10, 128)
 
 acc_end = model.test(test_im, test_lab)
 
 print('accuracy: ', acc_init)
 print('accuracy: ', acc_end)
-model.print_model()
-model.save_model('test.pkl')
+model.print()
+model.save_model('test2.pkl')
 
-#Use model.load('test.pkl') to use model I trained
