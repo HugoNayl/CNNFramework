@@ -1,6 +1,6 @@
 # CNN Framework
 
-This repository contains my own implementation of a Convolutional Neural Network (CNN) framework for model training and creation.
+This repository contains my own implementation of a Convolutional Neural Network (CNN) framework for model training and model creation.
 
 ### Highlights
 - **Optimized Computations:** Used dot products where applicable to enhance computational speed.
